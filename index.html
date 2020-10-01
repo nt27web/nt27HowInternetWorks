@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--calling the js file used to make the background image stretch all the way across screen-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script>
+        $(document).ready(function () {
+            $('#navigate').on('click', function (event) {
+                location.hash = "#middle";
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="https://nt27web.github.io/InternetHistory_ntsh/">Home</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./pages/internetinvention.html">Internet Invention</a></li>
+                    <li><a href="./pages/browserwar.html">Browser Wars</a></li>
+                    <li><a href="./pages/internetsearch.html">Internet Search</a></li>
+                    <li><a href="./pages/dotcombubble.html">Dot com bubble</a></li>
+                    <li><a href="./pages/people.html">The People</a></li>
+                    <li><a href="./pages/historyofweb.html">Internet History</a></li>
+                </ul>
+            </li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="./pages/team.html">Team</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="page-header header container-fluid">
+    <div class="overlay"></div>
+    <div class="description">
+        <h1>Welcome to the Website</h1>
+        <h1>'History of the Internet'</h1>
+        <p>Use the Menu bar to navigate to different Topics. Take a quick look at the list below</p>
+
+        <button id="navigate" type="button" class="btn">Tell Me More!</button>
+    </div>
+</header>
+
+<div id="middle" class="container features">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title">Internet Invention</h3>
+            <img src="images/invention_edited_Icon.jpg" class="img-fluid">
+            <p>A Historic revolution in the communication of the human race</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title">Browser Wars</h3>
+            <img src="images/browser-wars.jpg" class="img-fluid">
+            <p>When Netscape and Microsoft fought the battle to be Number 1</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title">Internet Search</h3>
+            <img src="images/searchhero_edited_icon.jpg" class="img-fluid">
+            <p>The History of Search Engines</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title">Dot com Bubble</h3>
+            <img src="images/bubble_editedicon.jpg" class="img-fluid">
+            <p>A Stock market bubble caused by excessive speculation in Internet-related companies</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title">The People</h3>
+            <img src="images/Peoplepower_edited.jpg" class="img-fluid">
+            <p>People Power</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title">Internet History</h3>
+            <img src="images/Internet-history_edited_icon.jpg" class="img-fluid">
+            <p>The beginning of the Internet websites</p>
+        </div>
+
+    </div>
+</div>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                <p></p>
+                <p>This site was designed and developed by Nayana K Thakur and Saurav Halepalya
+                    <br/> as their masters assignment for the course Web development (IS-601)</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <p>New Jersey Institute of Technology
+                    <br/>
+                    323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102
+                    <br/>kwilliam@njit.edu
+                    <br/>+(973) 596-3000
+                </p>
+            </div>
+        </div>
+        <div style="height: 20px"></div>
+        <div class="footer-copyright text-center">© 2020 Copyright:
+            <a href="https://nt27web.github.io/InternetHistory_ntsh/">nt27web.github.io/InternetHistory_ntsh</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
