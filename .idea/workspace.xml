@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7aa8aa79-b067-4b07-9473-c6d97387f1bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/DNS-Propagtion-How-A-website-Is-Found-Using-DNS-Lookup-1_edited.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/howdomainswork_edited.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/what-is-dns_edited.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/DNS.html" afterDir="false" />
+    <list default="true" id="ee34a767-b9ab-4c7a-8b41-1b0173c0a7b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/httpstructure_edited.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/http_https.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,16 +36,11 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="feature/IP_packets_and_routing" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/pages/DNS.html" root0="SKIP_INSPECTION" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iFy33jgWTBN97wSWrNhPwFrEBk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
