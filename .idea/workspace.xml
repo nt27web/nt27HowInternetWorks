@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b6cc6984-9e7d-453d-987a-24fd47337c82" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/about" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pages/DNS.html" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="1iFy33jgWTBN97wSWrNhPwFrEBk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2873" y="246" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602276270149">
+      <screen x="2256" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2873" y="246" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1504.963/2256.0.1920.1040@2256.0.1920.1040" timestamp="1602276270149" />
+    <state x="483" y="228" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1504.963@0.0.1504.963" timestamp="1601961303704" />
+    <state x="597" y="379" key="Github.ShareDialog" timestamp="1601517495609">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="597" y="379" key="Github.ShareDialog/0.0.1504.963@0.0.1504.963" timestamp="1601517495609" />
+    <state x="435" y="186" key="Github.UntrackedFilesDialog" timestamp="1601517504318">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="435" y="186" key="Github.UntrackedFilesDialog/0.0.1504.963@0.0.1504.963" timestamp="1601517504318" />
+    <state x="345" y="214" key="Vcs.Push.Dialog.v2" timestamp="1601961601069">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="345" y="214" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1601961601069" />
+    <state x="93" y="93" width="1319" height="777" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602209107893">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="93" y="93" width="1319" height="777" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1504.963/2256.0.1920.1160@0.0.1504.963" timestamp="1602123508398" />
+  </component>
+</project>
