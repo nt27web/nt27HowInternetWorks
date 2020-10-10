@@ -15,44 +15,56 @@
     <script src="js/main.js"></script>
     <!--calling the js file used to make the background image stretch all the way across screen-->
     <link href="css/main.css" rel="stylesheet" type="text/css">
+
+    <script>
+        function navigateToPage(pageId) {
+            //alert(pageId);
+            var page = "";
+            // decide on what page should be loaded based on the index of the carousel item.
+            switch (pageId) {
+                case 0: page = "https://nt27web.github.io/nt27HowInternetWorks/pages/domainandICANN.html";
+                        break;
+                case 1: page = "https://nt27web.github.io/nt27HowInternetWorks/pages/IPAddresses_Packets_Routing.html";
+                        break;
+                case 2: page = "https://nt27web.github.io/nt27HowInternetWorks/pages/DNS.html";
+                        break;
+                case 3: page = "https://nt27web.github.io/nt27HowInternetWorks/pages/http_https.html";
+                        break;
+                case 4: page = "https://nt27web.github.io/nt27HowInternetWorks/pages/W3C_html_CSS.html";
+                        break;
+                default: alert("Page not found!");
+            }
+            // point the browser to the appropriate page
+            $(location).attr('href',page);
+        }
+    </script>
+
 </head>
 
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
- <!--   <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>-->
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="https://nt27web.github.io/nt27HowInternetWorks/">Home <span class="sr-only">(current)</span></a>
             </li>
-            <!--<li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>-->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button"
+                   data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     Dropdown
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="pages/domainandICANN.html">Domain names | ICANN</a>
-                    <a class="dropdown-item" href="pages/IPAddresses_Packets_Routing.html">IP Addresses | Packets | Routing</a>
-                    <a class="dropdown-item" href="#">DNS</a>
-                    <a class="dropdown-item" href="#">HTTP | HTTPS protocols</a>
-                    <a class="dropdown-item" href="#">W3C | HTML | CSS</a>
+                    <a class="dropdown-item" href="pages/IPAddresses_Packets_Routing.html">IP Addresses | Packets |
+                        Routing</a>
+                    <a class="dropdown-item" href="pages/DNS.html">DNS</a>
+                    <a class="dropdown-item" href="pages/http_https.html">HTTP | HTTPS protocols</a>
+                    <a class="dropdown-item" href="pages/W3C_html_CSS.html">W3C | HTML | CSS</a>
 
-                    <!--<div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>-->
                 </div>
             </li>
-            <!--<li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>-->
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -70,11 +82,10 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/facebook.jpg" class="d-block w-100" alt="Domain names and ICANN">
+                <img src="images/facebook.jpg" class="d-block w-100" alt="Domain names and ICANN" onclick="navigateToPage(0)">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Domain names and ICANN</h5>
                     <p>The Internet Corporation for Assigned Names and Numbers (ICANN) </p>
@@ -82,28 +93,29 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/bubble.jpg" class="d-block w-100" alt="...">
+                <img src="images/bubble.jpg" class="d-block w-100" alt="IP address, Packet and Routing" onclick="navigateToPage(1)">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>IP Addresses, Packets and Routing</h5>
-                    <p>Without IP addresses you could not connect with any websites and they could not share information with you</p>
+                    <p>Without IP addresses you could not connect with any websites and they could not share information
+                        with you</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/Peoplepower.jpg" class="d-block w-100" alt="...">
+                <img src="images/Peoplepower.jpg" class="d-block w-100" alt="Domain Name System" onclick="navigateToPage(2)">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>DNS</h5>
                     <p>Domain Name System</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/Peoplepower.jpg" class="d-block w-100" alt="...">
+                <img src="images/Peoplepower.jpg" class="d-block w-100" alt="HTTP and HTTPS protocols" onclick="navigateToPage(3)">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>HTTP and HTTPS protocols</h5>
                     <p>HTTP and HTTPS protocols</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/bubble.jpg" class="d-block w-100" alt="...">
+                <img src="images/bubble.jpg" class="d-block w-100" alt="W3C and HTML and CSS" onclick="navigateToPage(4)">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>W3C and HTML and CSS</h5>
                     <p>W3C and HTML and CSS</p>
@@ -122,47 +134,46 @@
 
 </div>
 
-        <div class="container" style="text-align: center">
+<div class="container" style="text-align: center">
 
-            <h1>Welcome to the Website</h1>
-            <h1>How Does the internet Work !</h1>
-            <br/>
-            <p>The Internet works through a packet routing network in accordance with the Internet Protocol (IP),
-                the Transport Control Protocol (TCP) and other protocols</p>
-            <br>
-            <p><b>Let's dive in for more details!! Use the Menu bar to navigate to different Topics.</b></p>
-            <br>
+    <h1>Welcome to the Website</h1>
+    <h1>How Does the internet Work !</h1>
+    <br/>
+    <p>The Internet works through a packet routing network in accordance with the Internet Protocol (IP),
+        the Transport Control Protocol (TCP) and other protocols</p>
+    <br>
+    <p><b>Let's dive in for more details!! Use the Menu bar to navigate to different Topics.</b></p>
+    <br>
 
+</div>
+
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                <p></p>
+                <p>This site was designed and developed by Nayana K Thakur
+                    <br/> as her masters assignment for the course Web development (IS-601)</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <p>New Jersey Institute of Technology
+                    <br/>
+                    323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102
+                    <br/>kwilliam@njit.edu
+                    <br/>+(973) 596-3000
+                </p>
+            </div>
         </div>
 
-
-
-        <footer class="page-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-12">
-                        <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-                        <p></p>
-                        <p>This site was designed and developed by Nayana K Thakur
-                            <br/> as her masters assignment for the course Web development (IS-601)</p>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <h6 class="text-uppercase font-weight-bold">Contact</h6>
-                        <p>New Jersey Institute of Technology
-                            <br/>
-                            323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102
-                            <br/>kwilliam@njit.edu
-                            <br/>+(973) 596-3000
-                        </p>
-                    </div>
-                </div>
-
-                <div style="height: 20px"></div>
-                <div class="footer-copyright text-center">© 2020 Copyright:
-                    <a href="https://nt27web.github.io/InternetHistory_ntsh/">nt27web.github.io/InternetHistory_ntsh</a>
-                </div>
-            </div>
-        </footer>
+        <div style="height: 20px"></div>
+        <div class="footer-copyright text-center">© 2020 Copyright:
+            <a href="https://nt27web.github.io/nt27HowInternetWorks/">https://nt27web.github.io/nt27HowInternetWorks/</a>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

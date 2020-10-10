@@ -23,17 +23,10 @@
 <a id="button"></a>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <!--<a class="navbar-brand" href="#">Navbar</a>
-    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-            class="navbar-toggler"
-            data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-        <span class="navbar-toggler-icon"></span>-->
-    </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="https://nt27web.github.io/nt27HowInternetWorks/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
                 <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
@@ -44,9 +37,9 @@
                 <div aria-labelledby="navbarDropdown" class="dropdown-menu">
                     <a class="dropdown-item" href="domainandICANN.html">Domain names | ICANN</a>
                     <a class="dropdown-item" href="IPAddresses_Packets_Routing.html">IP Addresses | Packets | Routing</a>
-                    <a class="dropdown-item" href="#">DNS</a>
-                    <a class="dropdown-item" href="#">HTTP | HTTPS protocols</a>
-                    <a class="dropdown-item" href="#">W3C | HTML | CSS</a>
+                    <a class="dropdown-item" href="DNS.html">DNS</a>
+                    <a class="dropdown-item" href="http_https.html">HTTP | HTTPS protocols</a>
+                    <a class="dropdown-item" href="W3C_html_CSS.html">W3C | HTML | CSS</a>
 
                 </div>
             </li>
@@ -60,7 +53,7 @@
 
 <div class="jumbotron text-center" style="horiz-align:center;width: 100%">
     <h1>IP Address, Packets, Routing</h1>
-    <p>Data travels on the internet in a much less direct fashion</p>
+    <p>Data travels on the internet in a less direct fashion</p>
 </div>
 
 <div class="container content">
@@ -68,7 +61,7 @@
         <div style="horiz-align:center;width: 100%;font-size: 20px">
             <div style="width: auto">
                 <p>
-                <h1>IP Address</h1> </p>
+                <h2>IP Address</h2> </p>
 
                 <p>A unique string of numbers separated by periods that identifies each computer using the Internet
                     Protocol to communicate over a network. </p>
@@ -84,9 +77,9 @@
             </div>
 
             <div class="text-center" style="alignment: center">
-                <img class="rounded float-none" src="../images/IP%20Address%20image.jpg"/>
+                <img class="rounded float-none" src="../images/IP%20Address%20image_edited.jpg"/>
             </div>
-
+                <br>
             <div>
                 <p>As you can see in the picture above An IPv4 address consists of four numbers, each of which contains
                     one to three digits, with a single dot (.) separating each number or set of digits. Each of the four
@@ -102,23 +95,24 @@
                     companies...for millions of dollars.</p>
 
                 <p>What went wrong?</p>
-                The past decade has seen explosive growth in mobile devices including mobile phones, notebook
+                <p>The past decade has seen explosive growth in mobile devices including mobile phones, notebook
                 computers, and wireless handheld devices. The format for IPv4 was not designed to handle the sheer
-                number of IP addresses. Fortunately, there was a backup IP address type waiting in the wings.
+                    number of IP addresses. Fortunately, there was a backup IP address type waiting in the wings.</p>
 
+                <br>
                 <p><b>Goodbye IPv4. Hello IPv6.</b></p>
                 <p>It is called IPv6 and it offers a maximum number of IP address for today and for the future.
                     Whereas IPv4 supports a maximum of approximately 4.3 billion unique IP addresses, IPv6 supports, in
                     theory, a maximum number that will never run out. </p>
 
-                <p>A theoretical maximum of <code>&lt;340,282,366,920,938,463,463,374,607,431,768,211,456.&gt;</code>
+                <p>A theoretical maximum of <code>340,282,366,920,938,463,463,374,607,431,768,211,456</code>.
                     To be exact. In other words, we will never run out of IP addresses again.</p>
 
                 <p>An IPv6 address consists of eight groups of four hexadecimal digits. If a group consists of four
                     zeros, the notation can be shortened using a colon to replace the zeros. Here is an example IPv6
                     address:</p>
 
-                <p><b>2001:0db8:85a3:0000:0000:8a2e:0370:7334 </b></p>
+                <p style="text-align: center"><b>2001:0db8:85a3:0000:0000:8a2e:0370:7334 </b></p>
 
                 <p>In both IPv4 and IPv6, remembering the IP address of every device is not possible, except on the
                     smallest of networks. Name resolution provides a way to lookup an IP address from an easier to use
@@ -132,7 +126,7 @@
                     all communications sent to that name. </p>
 
                 <p>
-                <h1>A Packet</h1></p>
+                <h2>A Packet</h2></p>
                 <p>is a small amount of data sent over a network, such as a LAN or the Internet. Like a real-life
                     package, each packet includes a source and destination as well as the content (or data) being
                     transferred. </p>
@@ -169,10 +163,12 @@
                     network layer.</p>
 
                 <div class="text-center" style="alignment: center">
-                    <img class="rounded float-none" src="../images/packet-switching-diagram.png"/>
-                </div>
-                <p class="font-italic"> Packet Travelling </p>
+                    <img class="rounded float-none" src="../images/packet-switching-diagram_edited.jpg"/>
 
+                    <p class="font-italic"> -Packet Travelling </p>
+                </div>
+
+                <br>
                 <p><b>Datagram</b> there are two forms: UDP datagram and the IP datagram. And they are
                     differentiated based on the protocol in use at the time being addressed. If the split data is being
                     processed by the IP network protocol, then it is an IP datagram. And if at the transport layer it is
@@ -206,6 +202,7 @@
                     destination IP address – device – at which end they are reassembled to display original information
                     (such as texts, graphics, etc.) or initiate commands.</p>
 
+                <br>
                 <p><b> Parts of a Network Packet</b></p>
                 <p>A Network packet is divided into three parts; the header, payload, and trailer, each containing
                     values that are characteristic of it. </p>
@@ -226,14 +223,16 @@
                     </li>
                 </ul>
 
-                <!--<div class="content" style="left: auto">-->
-                    <img class="rounded float-left" src="../images/unnamed.jpeg"/>
-                <!--</div>-->
+                <div class="text-center" style="alignment: center">
+                <img class="rounded float-none" src="../images/unnamed.jpeg"/>
                 <p class="font-italic"> -This is how a Packet looks like </p>
+                </div>
+
+                <br>
 
                 <p><b>Payload or data –</b></p>
-                Which refers to the actual data being transported by the packet. Depending on the network, the size can
-                vary between 48 bytes to 4 kb range.
+                <p>Which refers to the actual data being transported by the packet. Depending on the network, the size can
+                    vary between 48 bytes to 4 kb range.</p>
 
                 <p><b>Trailer –</b></p>
                 <p>Contents of a packet trailer differ with each network type. Generally, a trailer contains a few bits
@@ -248,10 +247,11 @@
                     different locations) is very common, continuous requests for re-transmission of files can affect
                     productivity and increase downtimes. </p>
 
-                <!--<div class="text-center">-->
-                    <img class="rounded float-none" src="../images/packet%20loss.jpg"/>
-                <!--</div>-->
-                <p class="font-italic"> -The Woe of Network packet loss </p>
+                <div class="text-center" style="alignment: center">
+                    <img class="rounded float-none" src="../images/packet%20loss_edited.jpg"/>
+                    <p class="font-italic"> -The Woe of Network packet loss </p>
+                </div>
+
 
                 <p>A network packet loss occurs when a packet is unable to get to its destination, either because it was
                     dropped or lost in transit – resulting in low quality of experience (QoE). A packet loss though less
@@ -277,14 +277,15 @@
                     far ahead of the curve of setting out an effective solution to return to a high performing
                     network. </p>
 
-                <p><b><h1> Routing </h1></b></p>
-                is the process of selecting a path for traffic in a network or between or across multiple networks.
+                <p><b><h2> Routing </h2></b></p>
+                <p>is the process of selecting a path for traffic in a network or between or across multiple networks.
                 Broadly, routing is performed in many types of networks, including circuit-switched networks, such as
                 the public switched telephone network, and computer networks, such as the Internet. <b>Network routing
-                is the process of selecting a path across one or more networks. </b>
+                        is the process of selecting a path across one or more networks. </b></p>
+
                 <p>In packet-switching networks, such as the Internet, routing selects the paths for Internet Protocol
                     (IP) packets to travel from their origin to their destination. These Internet routing decisions are
-                    made by specialized pieces of network hardware called <b>routers</b>. </p>
+                    made by specialized pieces of network hardware called <b>routers</b>.</p>
 
                 <p>Consider the image below. For a data packet to get from Computer A to Computer B, should it pass
                     through networks 1, 3, and 5 or networks 2 and 4? The packet will take a shorter path through
@@ -293,8 +294,9 @@
 
                 <div class="text-center">
                     <img class="rounded float-none" src="../images/routing.png"/>
+                    <p class="font-italic"> -Data Packet to get from Computer A to Computer B </p>
                 </div>
-                <p class="font-italic"> -Data Packet to get from Computer A to Computer B </p>
+                <br>
 
                 <p><b>How does routing work? </b></p>
                 <p>Routers refer to internal routing tables to make decisions about how to route packets along network
@@ -322,7 +324,7 @@
                     conditions.
                     Dynamic routing requires more computing power, which is why smaller networks may rely on static
                     routing. But for medium-sized and large networks, dynamic routing is much more efficient. </p>
-
+                <br>
                 <p><b>What are the main routing protocols? </b></p>
                 <p> In networking, a protocol is a standardized way of formatting data so that any connected computer
                     can understand the data. A routing protocol is a protocol used for identifying or announcing network
@@ -347,13 +349,14 @@
                     one
                     network to another, where "hop count" means number of routers a packet must pass through on the way.
                     (When a packet goes from one network to another, this is known as a "hop.")</p>
-
+                    <br>
                 <p><b>What is a router? </b></p>
 
                 <div class="text-center">
                     <img class="rounded float-none" src="../images/router.jpg"/>
+                    <p class="font-italic"> -A router </p>
                 </div>
-                <p class="font-italic"> -A router </p>
+
 
                 <p>A router is a piece of network hardware responsible for forwarding packets to their destinations.
                     Routers connect to two or more IP networks or subnetworks and pass data packets between them as
@@ -390,7 +393,7 @@
 
         <div style="height: 20px"></div>
         <div class="footer-copyright text-center">© 2020 Copyright:
-            <a href="https://nt27web.github.io/InternetHistory_ntsh/">nt27web.github.io/InternetHistory_ntsh</a>
+            <a href="https://nt27web.github.io/nt27HowInternetWorks/">https://nt27web.github.io/nt27HowInternetWorks/</a>
         </div>
     </div>
 </footer>
