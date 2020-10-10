@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>IP Address, Packets, Routing</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+
+<!-- Back to top button -->
+<a id="button"></a>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="#"
+                   id="navbarDropdown" role="button">
+                    Dropdown
+                </a>
+                <div aria-labelledby="navbarDropdown" class="dropdown-menu">
+                    <a class="dropdown-item" href="domainandICANN.html">Domain names | ICANN</a>
+                    <a class="dropdown-item" href="IPAddresses_Packets_Routing.html">IP Addresses | Packets |
+                        Routing</a>
+                    <a class="dropdown-item" href="#">DNS</a>
+                    <a class="dropdown-item" href="#">HTTP | HTTPS protocols</a>
+                    <a class="dropdown-item" href="#">W3C | HTML | CSS</a>
+
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input aria-label="Search" class="form-control mr-sm-2" placeholder="Search" type="search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="jumbotron text-center" style="horiz-align:center;width: 100%">
+    <h1>IP Address, Packets, Routing</h1>
+    <p>Data travels on the internet in a much less direct fashion</p>
+</div>
+
+<div class="container content">
+    <div class="row">
+        <div style="horiz-align:center;width: 100%;font-size: 20px">
+            <div style="width: auto">
+                <p>
+                <h2>DNS, short for Domain Name System</h2></p>
+
+                <p>is one of the most common yet misunderstood components of the web landscape. To put it simply, DNS
+                    helps direct traffic on the Internet by connecting domain names with actual web servers.
+                    Essentially, it takes a human-friendly request – a domain name like kinsta.com – and translates it
+                    into a computer-friendly server IP address – like 216.3.128.12. Because DNS is all about looking up
+                    addresses and connecting devices, many people call DNS the “phonebook of the Internet”. Without DNS,
+                    you would have to memorize every site’s IP address to access it which…well, that just would not
+                    work! </p>
+
+                <div class="text-center">
+                    <img class="rounded float-none" src="../images/what-is-dns_edited.jpg"/>
+
+                    <p class="font-italic">-DNS is all about looking up addresses and connecting devices</p>
+                </div>
+
+                <br>
+                <p><b>Types of DNS</b></p>
+                <p>There are several types of DNS records you may need to be aware of. The main records include:</p>
+                <p>DNS records associate a domain with a web-based service. </p>
+                <ul>
+                    <li>A record</li>
+                    <li>CNAME records</li>
+                    <li>MX records</li>
+                    <li>TXT records</li>
+                </ul>
+
+
+                <p><b>“DNS is the address of every page on the Web 🏠...which means understanding how to make changes
+                    and keep DNS files secure is essential.”</b></p>
+
+                <br>
+                <p><b><h3>How Does DNS Work? </h3></b></p>
+
+                <p>When a user enters a URL in their web browser, DNS gets to work to connect that URL to the IP address
+                    of the actual server. This is called DNS name resolution and involves a DNS recursor querying
+                    various nameservers to figure out the actual IP address of a server.</p>
+
+                <div class="text-center">
+                    <img class="rounded float-none" src="../images/howdomainswork.png"/>
+
+                    <p class="font-italic">-Four Components of DNS</p>
+                </div>
+
+                <p>DNS is mainly concerned with four components:</p>
+                <ul>
+                    <li>Domain Registrar</li>
+                    <li>Nameservers</li>
+                    <li>DNS Records</li>
+                    <li>Web-based services (such as website hosting and email)</li>
+                </ul>
+
+                <p>Let us talk about these four components and how they work together. </p>
+
+                <p><b>Domain Registrar</b></p>
+                <p>A domain registrar is the service provider where domain names are purchased and where domain
+                    registration is maintained (such as GoDaddy or Namecheap). </p>
+
+                <p>The registrar is where the domain nameservers are specified. </p>
+
+                <p>Most registrars include basic DNS service with the cost of domain registration. As a result, unless
+                    you add custom nameservers to the domain, the domain will use the registrar’s standard nameservers.
+                    This means that in many cases, by default, DNS records are managed by the registrar. </p>
+
+                <p><b>Nameservers</b></p>
+
+                <p>Nameservers are servers much like web servers. However, they are configured to store DNS records
+                    rather than to serve up websites or web applications.
+                    This means that when you want to change any DNS record you must change those DNS records on the
+                    nameservers that have been specified by the registrar or third-party service. </p>
+
+                <p>This step is often a little confusing, so let us break this down a little bit by looking at a
+                    fictional example:</p>
+                <ol>
+                    <li>Your domain (example.com) is registered at GoDaddy.</li>
+                    <li>You add Cloudflare’s nameservers to example.com within your GoDaddy account to start using
+                        Cloudflare.
+                    </li>
+                    <li>You change a DNS record for example.com at GoDaddy. This change will not do anything because the
+                        domain is not using GoDaddy’s nameservers.
+                    </li>
+                    <li>You make the same DNS change for example.com at Cloudflare. This change will be effective
+                        because the
+                        domain is using Cloudflare’s nameservers.
+                    </li>
+                </ol>
+
+                <p>So, in other words, if you are only using GoDaddy, you will need to update your DNS records with
+                    GoDaddy as they control your nameservers. </p>
+
+                <p><b>How DNS and Nameservers Link Together</b></p>
+
+                <p>To show your website’s IP address, click the ‘Sites’ link on the left of your dashboard and then
+                    choosing the ‘Info’ tab which will reveal the basic information that enables your website to be
+                    located on the Web.</p>
+
+                <p>Think about IP addresses like phone numbers. Eventually, we ran out of new numbers to give to
+                    customers, so we had to change how we organized the phone numbers in use. It is the same with IP
+                    addresses. IPv6 gives us more IP addresses to hand out to new websites. As the Web continues to
+                    expand, IPv4 simply ran out of IP addresses! </p>
+
+                <p>You may have also heard there are dedicated IP addresses and shared IP addresses. A dedicated IP
+                    address is like your landline or mobile phone number; it is unique to you and your website. </p>
+                <p>A shared IP address, as its name suggests, is shared by several websites. Shared IP addresses are
+                    common with websites that use WordPress. It is important to understand that a shared IP address does
+                    not mean your website is sharing other resources as well. </p>
+
+                <p><b>What Is DNS Lookup? </b></p>
+                <p>Think about the last time you searched for a website. The time it took from the moment you hit the
+                    enter key to the website appearing in your browser has a lot to do with DNS lookup. As you already
+                    know, the faster your website can be served to a visitor, the better.</p>
+
+                <p>As you will remember, when someone types your website’s domain name into their browser, the location
+                    of your website must be found. The DNS file associated with your website contains that information
+                    including the nameserver and IP address.</p>
+
+                <div class="text-center">
+                    <img class="rounded float-none"
+                         src="../images/DNS-Propagtion-How-A-website-Is-Found-Using-DNS-Lookup-1_edited.jpg"/>
+
+                    <p class="font-italic">-DNS has a vital role to play to ensure the right webpages are delivered
+                        each time a domain is entered or searched for. (Image source:
+                        <a href="https://wiki.jolt.co.uk/tips-tricks/understanding-dns-propagation/"> Jolt Wiki</a>)</p>
+                </div>
+
+                <p>You can see DNS lookup in action and see how the speed of DNS lookup can impact the performance of
+                    your website by using one of the speed test services such as Pingdom.</p>
+                <p>If you are asking yourself if you have control over DNS lookup speed as you do over other factors
+                    that affect the performance of your website, you would be right. In fact, reducing the speed of DNS
+                    lookups can be achieved in several ways.</p>
+
+                <br>
+                <p>
+                <h3>Web Services</h3></p>
+
+                <p>In our case, the web service is website hosting. An A record (or AAAA record) must be added to a
+                    domain’s nameservers to associate that domain with the web servers that host the website. </p>
+                <p>There are many other types of web services that are associated with a domain through DNS records:
+                    email, SFTP, hosting control panels, webmail applications, and phpMyAdmin just to name a few. </p>
+
+                <br>
+                <p>
+                <h3>DNS Propagation</h3></p>
+
+                <p>When you make a change to the DNS of a given domain – such as updating a DNS record or switching
+                    nameservers – those changes take some time to take effect. This time is called propagation.</p>
+                <p>Propagation varies considerably from one situation to the next. In the case of DNS records, each
+                    record has an associated <b>time-to-live (TTL)</b> value. This value determines how quickly changes
+                    to DNS
+                    records will take effect. </p>
+
+                <p>In most cases, TTL for DNS records is set to 1 or 4 hours by default. This means that most of the
+                    time DNS changes will take as much as 4 hours to take effect. Higher TTL values are also possible
+                    and will mean that when a DNS record is updated that it will take more time before the changes take
+                    full effect. In some extreme cases, some might have TTL values as high as one week. </p>
+                <p>In the case of nameservers, the registrar determines the TTL value and it generally cannot be
+                    changed. This means that when you switch to new nameservers it can take from a few minutes up to a
+                    day or longer for those changes to take effect. </p>
+
+                <p>The hosting provider cannot speed up DNS propagation. What you can do is reduce TTL well in advance
+                    of making any changes to DNS records so that the changes propagate as quickly as possible. You can
+                    use an online tool like whatsmydns.net to test to see if your DNS changes have finished
+                    propagating. </p>
+
+                <br>
+                <p>
+                <h3>DNS Configuration – How to Set up Your Domain </h3></p>
+                <p>There are two ways that you will commonly set up your DNS. One method is to simply point your
+                    domain’s nameservers to your host’s name servers via your domain name registrar. These are a minimum
+                    of two separate URLs that look something like this (you can have more than two URLs, just not
+                    fewer):</p>
+                <ul>
+                    <li>ns1.yourhost.com</li>
+                    <li>ns2.yourhost.com</li>
+                </ul>
+
+                <br>
+                <p>
+                <h3>To Summarize</h3></p>
+                <p>Hopefully, you understand a little more now about how DNS works. To recap, DNS is used to associate
+                    web-based services, such as website hosting and email, with a domain name. This involves four
+                    steps:</p>
+                <ol>
+                    <li>The domain must be registered with a domain registrar.</li>
+                    <li>Nameservers must be specified by the domain registrar.</li>
+                    <li>DNS records must be added to the nameservers specified by the domain registrar or third-party
+                        service
+                        such as Cloudflare.
+                    </li>
+                    <li>The DNS records must be fully propagated to associate the domain with each relevant web
+                        service.
+                    </li>
+                </ol>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div style="height: 30px"></div>
+
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                <p></p>
+                <p>This site was designed and developed by Nayana K Thakur
+                    <br/> as her masters assignment for the course Web development (IS-601)</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <p>New Jersey Institute of Technology
+                    <br/>
+                    323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102
+                    <br/>kwilliam@njit.edu
+                    <br/>+(973) 596-3000
+                </p>
+            </div>
+        </div>
+
+        <div style="height: 20px"></div>
+        <div class="footer-copyright text-center">© 2020 Copyright:
+            <a href="https://nt27web.github.io/InternetHistory_ntsh/">nt27web.github.io/InternetHistory_ntsh</a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
